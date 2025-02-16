@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CatShop</title>
+    <div class="image">
+        <img src="\assets\logo.jpg" width=250 class="logo">
+    </div>
+
+    <div class="navigation">
+        <ul>
+            <li><a href="/auth/welcome.html#home">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="/admin/categoriesManagement.html">Categories</a></li>
+            <li><a href="/auth/welcome.html#about">About us</a></li>
+            <li><a href="/auth/welcome.html#info">Infos</a></li>
+            <li><a href="/admin/inbox.html">Inbox</a></li>
+            <li><a href="/admin/profile.html"><i>Profile</i> - username</a></li>
+        </ul>
+    </div>
+</head>
+
+<body>
+
+    <div class="products_management">
+        <h1>Products Management</h1>
+        <label for="name">Product Name:</label>
+        <input type="text" required><br>
+        <label for="price">Price:</label>
+        <input type="number" min="0" required><br>
+        <label for="description">Description:</label>
+        <textarea required></textarea><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" min="1" required><br>
+        <label for="image">Product Image:</label> <input type="file"><br>
+        <label>Choose a Category:</label>
+        <select name="cars" id="cars">
+            <option>Category 1</option>
+            <option>Category 2</option>
+            <option>Category 3</option>
+        </select><br>
+        <input type="button" value="Add/Edit Product">
+    </div>
+
+    <div class="products_list">
+        <h2>Prodcuts List</h2>
+        <table border="1">
+            <tr>
+              <th>ID</th>
+              <th>Image</th>
+              <th>Category</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Quantity</th>
+              <th>Actions</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><img src="not here"></td>
+              <td>Category A</td>
+              <td>Product A</td>
+              <td>120.00 MAD</td>
+              <td>This is a description of Product A</td>
+              <td>100</td>
+              <td><input type="button" value="Edit"> <input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="not here too"></td>
+                <td>Category B</td>
+                <td>Product B</td>
+                <td>245.00 MAD</td>
+                <td>This is a description of Product B</td>
+                <td>50</td>
+                <td><input type="button" value="Edit"> <input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="not here as well"></td>
+                <td>Category C</td>
+                <td>Product C</td>
+                <td>315.00 MAD</td>
+                <td>This is a description of Product A</td>
+                <td>200</td>
+                <td><input type="button" value="Edit"> <input type="button" value="Delete"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>&copy 2025 CatShop. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
