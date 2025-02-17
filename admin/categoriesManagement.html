@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CatShop</title>
+    <div class="image">
+        <img src="\assets\logo.jpg" width=250 class="logo">
+    </div>
+
+    <div class="navigation">
+        <ul>
+            <li><a href="/auth/welcome.html#home">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="/admin/categoriesManagement.html">Categories</a></li>
+            <li><a href="/auth/welcome.html#about">About us</a></li>
+            <li><a href="/auth/welcome.html#info">Infos</a></li>
+            <li><a href="/admin/inbox.html">Inbox</a></li>
+            <li><a href="/admin/profile.html"><i>Profile</i> - username</a></li>
+        </ul>
+    </div>
+</head>
+
+<body>
+
+    <div class="category_management">
+        <h1>Category Management</h1>
+        <label for="name">Category Name:</label>
+        <input type="text" required><br>
+        <label for="icon">Category Icon (URL):</label>
+        <input type="url" required><br>
+        <input type="button" value="Add/Edit Category">
+    </div>
+
+    <div class="category_list">
+        <h2>Category List</h2>
+        <table border="1">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Icon</th>
+              <th>Actions</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Category A</td>
+              <td><i>icon</i></td>
+              <td><input type="button" value="Edit"> <input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Category B</td>
+                <td><i>icon</i></td>
+                <td><input type="button" value="Edit"> <input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Category C</td>
+                <td><i>icon</i></td>
+                <td><input type="button" value="Edit"> <input type="button" value="Delete"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>&copy 2025 CatShop. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
