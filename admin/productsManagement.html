@@ -23,22 +23,24 @@
 
     <div class="products_management">
         <h1>Products Management</h1>
-        <label for="name">Product Name:</label>
-        <input type="text" required><br>
-        <label for="price">Price:</label>
-        <input type="number" min="0" required><br>
-        <label for="description">Description:</label>
-        <textarea required></textarea><br>
-        <label for="quantity">Quantity:</label>
-        <input type="number" min="1" required><br>
-        <label for="image">Product Image:</label> <input type="file"><br>
-        <label>Choose a Category:</label>
-        <select name="cars" id="cars">
-            <option>Category 1</option>
-            <option>Category 2</option>
-            <option>Category 3</option>
-        </select><br>
-        <input type="button" value="Add/Edit Product">
+        <form>
+            <label for="name">Product Name:</label>
+            <input type="text" required><br>
+            <label for="price">Price:</label>
+            <input type="number" min="0" required><br>
+            <label for="description">Description:</label>
+            <textarea required></textarea><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" min="1" required><br>
+            <label for="image">Product Image:</label> <input type="file"><br>
+            <label>Choose a Category:</label>
+            <select name="cars" id="cars">
+                <option>Category 1</option>
+                <option>Category 2</option>
+                <option>Category 3</option>
+            </select><br>
+            <input type="button" value="Add/Edit Product">
+        </form>
     </div>
 
     <div class="products_list">
