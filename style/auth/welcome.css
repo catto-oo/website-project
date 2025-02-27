@@ -1,0 +1,23 @@
+@import url("variables.css");
+
+.main {
+    height: 100vh;  /* Makes it as tall as the full screen */
+    justify-content: center;
+}
+.main h1{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 4rem;
+    text-align : center;
+    color: var(--color-text-dark)
+}
+
+.main p{
+    text-align : center;
+    line-height: 30px;
+    color: var(--color-text-dark)
+}
+
+.main a{
+    color: red;
+}
