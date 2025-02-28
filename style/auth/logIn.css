@@ -1,41 +1,88 @@
-/* Centering the login form */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+.login {
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: center; /* Centers the cards vertically */
+    text-align: center;
+    margin-top: 89px;
 }
 
-/* Styling the form */
-form {
-    background: rgb(245, 222, 255);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling inputs */
-input {
+h2{
+    padding: 40px;
+    font-size: var(--font-title);
+    text-align: center; /* Centers the text */
     width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
-/* Button styling */
-button {
-    background: darkorchid;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    border: none;
+form {
+    display: flex;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: var(--font-small);
+    text-align: left;
+    margin-bottom: 10px;
+    width: 350px; /* Makes sure the labels stretch to the form width */
+}
+
+input {
+    font-size: var(--font-small);
+    display: block;
+    width: 350px;
+    height: 40px;
+    border: 1px solid grey;
     border-radius: 4px;
-    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+button {
+    color: var(--color-text-light);
+    margin-top: 50px;
+    font-size: var(--font-small);
+    width: 350px;
+    height: 40px;
+    border: 0px ;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.3s ease-in-out;
+    background-color: var(--color-primary-purple);
+    box-shadow: var(--box-shadow);
+}
+
+input:hover, textarea:hover {
+    border: 2px solid var(--color-primary-purple); /* Change to any color you like */
 }
 
 button:hover {
-    background: #e90909;
+    box-shadow: var(--box-shadow-hover);
+    background-color: var(--hover-color);
+}
+
+#forgor{
+    width: 350px;
+    text-align: right;
+}
+
+a {
+    color: var(--color-primary-blue);
+    text-decoration: none;
+}
+
+.login p {
+    width: 350px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.footer {
+    margin-top: 80px;
 }

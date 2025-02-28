@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="../style/shared/global.css">
+    <link rel="stylesheet" href="../style/shared/nav.css">
     <link rel="stylesheet" href="../style/auth/logIn.css">
     <title>CatShop</title>
     <div class="logo">
@@ -21,13 +22,13 @@
 <body>
     
     <div class="login">
-        <h2>Login to CatShop</h2>
         <form>
+            <h2>Login to CatShop</h2>
             <label for="email">E-mail:</label>
             <input type="email" placeholder="Enter your email" required><br>
             <label for="password">Password:</label>
             <input type="password" minlength="8" placeholder="Enter your password" required>
-            <p><a href="#">Forgot password?</a></p>
+            <a id="forgor" href="#">Forgot password?</a>
             <button>Login</button>
             <p>Don't have an account? <a href="signUp.html">Create one</a></p>
         </form>
