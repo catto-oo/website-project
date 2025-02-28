@@ -14,10 +14,191 @@
 
 .main p{
     text-align : center;
-    line-height: 30px;
+    line-height: 35px;
     color: var(--color-text-dark)
 }
 
-.main a{
-    color: red;
+.main #log{
+    margin-top: 60px;
+    display: inline-block;  /* Makes it behave like a button */
+    padding: 3px 54px;  /* Adds space inside */
+    background-color: var(--color-primary-purple);  /* Sets button color */
+    text-decoration: none;  /* Removes underline */
+    font-size: var(--font-base);  /* Sets text size */
+    border-radius: 5px;  /* Rounds corners */
+    transition: background-color 0.3s ease-in-out;  /* Smooth effect */
+    color: var(--color-text-light);
+    box-shadow: var(--box-shadow);
+}
+
+.main #log:hover {
+    background-color: var(--hover-color);
+    box-shadow: var(--box-shadow-hover)
+}
+
+.main #sign{
+    margin-right: 100px;
+    display: inline-block;  /* Makes it behave like a button */
+    padding: 2px 50px;  /* Adds space inside */
+    background-color: white;  /* Sets button color */
+    text-decoration: none;  /* Removes underline */
+    font-size: var(--font-base);  /* Sets text size */
+    border-radius: 5px;  /* Rounds corners */
+    transition: background-color 0.3s ease-in-out;  /* Smooth effect */
+    color: var(--color-text-dark);
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: black;
+    box-shadow: var(--box-shadow)
+}
+
+.main #sign:hover {
+    background-color: rgb(255, 191, 255);
+    box-shadow: var(--box-shadow-hover)
+}
+
+.about .content {
+    display: flex;
+    justify-content: flex-start; /* Align horizontally to the left */
+    height: 100vh; /* Makes the container fill the full height of the viewport */
+}
+
+.about h2 {
+    font-size: var(--font-title);
+    text-align : center;
+    margin-bottom: 60px;
+}
+
+.about p {
+    font-size: var(--font-base);
+    margin-right: 150px;
+    margin-left: 50px;
+    line-height: 25px;
+    margin-bottom: auto;
+}  
+
+.about .lin {
+    display: block;
+}
+
+.about img{
+    margin-right: 50px;
+    height: 300px;
+    width: auto;
+}
+
+.info {
+    display: flex; /* Use flexbox to align children */
+    flex-wrap: wrap; /* Allows the boxes to wrap to the next line if the container is too small */
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: center; /* Centers the cards vertically */
+    height: 100vh;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: var(--font-title);
+    text-align: center; /* Centers the text */
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.info .card {
+    width: 280px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-top: -100px;
+    box-shadow: var(--box-shadow);
+}
+
+.info h3 {
+    margin-top: -10px;
+    color: var(--color-primary-purple);
+    font-size: var(--font-large);
+}
+
+.info p {
+    font-size: var(--font-small);
+    text-align: left;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.info ul {
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: var(--font-small);
+    list-style-type: none;
+    text-align: left;
+}
+
+.contact {
+    height: 100vh;
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: center; /* Centers the cards vertically */
+    text-align: center;
+    margin: 0;
+}
+
+.contact h2{
+    margin-top: 100px;
+    font-size: var(--font-title);
+    text-align: center; /* Centers the text */
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Centers everything inside the form */
+    text-align: center;
+    gap: 15px; /* Adds spacing between inputs */
+    padding: 20px;
+}
+
+.contact label {
+    font-size: var(--font-small);
+    text-align: left;
+    margin-bottom: -5px;
+    width: 500px; /* Makes sure the labels stretch to the form width */
+}
+
+input, textarea {
+    display: block;
+    width: 500px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 8px;
+    resize: vertical;
+    margin-bottom: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+#send {
+    font-size: var(--font-small);
+    margin-top: 20px;
+    width: 150px;
+    transition: background-color 0.3s ease-in-out;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+input:hover, textarea:hover {
+    border: 2px solid var(--color-primary-purple); /* Change to any color you like */
+}
+
+#send:hover {
+    box-shadow: var(--box-shadow-hover);
+    background-color: var(--hover-color);
+    border: 1px solid grey;
 }

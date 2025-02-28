@@ -1,10 +1,11 @@
 :root {
     /* Colors */
-    --color-bg-light: #f9fafb;
+    --color-bg-light: #f7f7f7;
     --color-bg-dark:#1f2937;
     --color-text-light: #ffffff;
     --color-text-dark: #333333;
     --color-primary-blue: #007BFF;
+    --hover-color: #b458ff;
     --color-primary-purple: #7c3aed;
     --color-box-shadow: rgba(0, 0, 0, 0.1);
 

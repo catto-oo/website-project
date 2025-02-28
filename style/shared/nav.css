@@ -10,6 +10,8 @@ nav {
 }
 
 .logo img {
+    margin-top: 10px;
+    margin-left: 10px;
     height: 50px;  /* Adjust height as needed */
     width: auto;  /* Keeps the aspect ratio */
 }
@@ -37,18 +39,17 @@ nav {
     color: var(--color-text-dark);  /* Sets link color */
     font-size: var(--font-large);  /* Sets text size */
     transition: color 0.3s ease-in-out;  /* Makes color change smoothly on hover */
+    
 }
 
 .navigation ul li a:hover {
-    color: var(--color-primary-purple);  /* Changes text color on hover */
+    color: var(--hover-color);  /* Changes text color on hover */
 }
 
 .footer {
     text-align: center;  /* Centers text */
-    padding: var(--spacing-small);  /* Adds space inside footer */
-    background-color: var(--color-bg-light);  /* Sets footer background */
-    color: var(--color-text-dark);  /* Makes text white */
-    position: relative;  /* Positions footer at bottom */
-    bottom: 0;  /* Sticks footer to bottom */
-    width: 100%;  /* Makes footer full width */
+    position: relative;
+    color: var(--color-text-light);  /* Makes text white */
+    background-color: var(--color-primary-purple);
+    padding: 25px;
 }
